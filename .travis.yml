@@ -46,7 +46,7 @@ install:
   - pip install dist/rgf_python-$RGF_VER.tar.gz -v
 
 script:
-  - pytest tests/ -v
+  - pytest tests/ -v -s
 
 before_deploy:
   - if [[ $TRAVIS_OS_NAME == "osx" ]]; then
